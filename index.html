@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Физическая Викторина</title>
+                <link rel="stylesheet" href="styles.css">
+                </head>
+                <body>
+                    <div class="container">
+                            <h1 class="title">Физическая Викторина</h1>
+
+                                    <!-- Выбор темы -->
+                                            <div id="topic-selection">
+                                                        <h2>Выберите тему:</h2>
+                                                                    <div class="topic-list">
+                                                                                    <button class="topic-btn" onclick="startQuiz('mechanics')">⚙️ Механика</button>
+                                                                                                    <button class="topic-btn" onclick="startQuiz('thermodynamics')">🔥 Термодинамика</button>
+                                                                                                                    <button class="topic-btn" onclick="startQuiz('optics')">🔆 Оптика</button>
+                                                                                                                                    <button class="topic-btn" onclick="startQuiz('electricity')">⚡ Электричество</button>
+                                                                                                                                                </div>
+                                                                                                                                                        </div>
+                                                                                                                                                                
+                                                                                                                                                                        <!-- Игровой процесс -->
+                                                                                                                                                                                <div id="quiz" class="hidden">
+                                                                                                                                                                                            <div class="card">
+                                                                                                                                                                                                            <h2 id="question"></h2>
+                                                                                                                                                                                                                            <div id="answers"></div>
+                                                                                                                                                                                                                                            <p id="score">Очки: 0</p>
+                                                                                                                                                                                                                                                            <button class="change-topic-btn" onclick="changeTopic()">🔄 Сменить тему</button>
+                                                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                    </div>
+
+                                                                                                                                                                                                                                                                                        <script src="script.js"></script>
+                                                                                                                                                                                                                                                                                        </body>
+                                                                                                                                                                                                                                                                                        </html>

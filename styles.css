@@ -1,0 +1,118 @@
+/* Общий стиль */
+body {
+    font-family: 'Arial', sans-serif;
+        text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+                color: white;
+                    margin: 0;
+                        padding: 0;
+                        }
+
+                        .container {
+                            width: 90%;
+                                max-width: 600px;
+                                    margin: 50px auto;
+                                        padding: 20px;
+                                            background: rgba(255, 255, 255, 0.1);
+                                                border-radius: 10px;
+                                                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                                                        backdrop-filter: blur(10px);
+                                                        }
+
+                                                        /* Заголовки */
+                                                        .title {
+                                                            font-size: 28px;
+                                                                margin-bottom: 20px;
+                                                                }
+
+                                                                /* Выбор темы */
+                                                                .topic-list {
+                                                                    display: flex;
+                                                                        flex-wrap: wrap;
+                                                                            gap: 10px;
+                                                                                justify-content: center;
+                                                                                }
+
+                                                                                .topic-btn {
+                                                                                    padding: 15px;
+                                                                                        width: 45%;
+                                                                                            font-size: 16px;
+                                                                                                border: none;
+                                                                                                    border-radius: 8px;
+                                                                                                        background: #ff9800;
+                                                                                                            color: white;
+                                                                                                                cursor: pointer;
+                                                                                                                    transition: transform 0.2s, background 0.3s;
+                                                                                                                    }
+
+                                                                                                                    .topic-btn:hover {
+                                                                                                                        transform: scale(1.05);
+                                                                                                                            background: #e68900;
+                                                                                                                            }
+
+                                                                                                                            /* Игровой процесс */
+                                                                                                                            .card {
+                                                                                                                                background: white;
+                                                                                                                                    color: black;
+                                                                                                                                        padding: 20px;
+                                                                                                                                            border-radius: 10px;
+                                                                                                                                                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                                                                                                                                                    animation: fadeIn 0.5s ease-in-out;
+                                                                                                                                                    }
+
+                                                                                                                                                    .hidden {
+                                                                                                                                                        display: none;
+                                                                                                                                                        }
+
+                                                                                                                                                        #answers button {
+                                                                                                                                                            display: block;
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                    padding: 10px;
+                                                                                                                                                                        margin: 5px 0;
+                                                                                                                                                                            font-size: 16px;
+                                                                                                                                                                                border: none;
+                                                                                                                                                                                    border-radius: 5px;
+                                                                                                                                                                                        background: #2196F3;
+                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                    transition: background 0.3s, transform 0.2s;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    #answers button:hover {
+                                                                                                                                                                                                        background: #1976D2;
+                                                                                                                                                                                                            transform: scale(1.05);
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            /* Кнопка смены темы */
+                                                                                                                                                                                                            .change-topic-btn {
+                                                                                                                                                                                                                padding: 10px;
+                                                                                                                                                                                                                    background: #f44336;
+                                                                                                                                                                                                                        color: white;
+                                                                                                                                                                                                                            border: none;
+                                                                                                                                                                                                                                border-radius: 5px;
+                                                                                                                                                                                                                                    cursor: pointer;
+                                                                                                                                                                                                                                        margin-top: 10px;
+                                                                                                                                                                                                                                            transition: background 0.3s, transform 0.2s;
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                            .change-topic-btn:hover {
+                                                                                                                                                                                                                                                background: #d32f2f;
+                                                                                                                                                                                                                                                    transform: scale(1.05);
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    /* Анимация появления */
+                                                                                                                                                                                                                                                    @keyframes fadeIn {
+                                                                                                                                                                                                                                                        from { opacity: 0; transform: translateY(-10px); }
+                                                                                                                                                                                                                                                            to { opacity: 1; transform: translateY(0); }
+                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                            /* Адаптация под мобильные устройства */
+                                                                                                                                                                                                                                                            @media (max-width: 500px) {
+                                                                                                                                                                                                                                                                .topic-btn {
+                                                                                                                                                                                                                                                                        width: 100%;
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                .container {
+                                                                                                                                                                                                                                                                                        width: 95%;
+                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                            }
